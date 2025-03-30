@@ -1,0 +1,41 @@
+html{
+    background-color:rgb(73, 73, 73);
+    color: wheat;
+}
+header{
+    padding: 1px 0px 1px 5%;
+    background-color:#682919;
+    font: bold 25px sans-serif;
+}
+body{
+    margin: 0px;
+}
+main{
+    height: 850px;
+    background-image:url(../images/background.png);
+}
+ul{
+    font: 20px;
+    line-height: 40px;
+}
+.article{
+    padding: 10px 0px 30px 5%;
+    font: 20px sans-serif;
+}
+.info-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 20px;;
+}
+.info-block {
+    background-color:rgb(57, 151, 48);
+    padding: 10px 20px 20px 20px;
+    border-radius: 8px;
+    width: 30%;
+}
+footer {
+    padding-left: 1600px;
+    color: #ffffff;
+    font-size: 10px;
+    
+}
