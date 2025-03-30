@@ -10,8 +10,9 @@ body{
     margin: 0px;
 }
 main{
-    height: 51rem;
+    padding: 0px 0px 1px 0px;
     background-image:url(../images/background.png);
+    background-repeat: repeat-y;
 }
 ul{
     font: 1.25rem;
