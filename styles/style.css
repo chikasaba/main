@@ -1,41 +1,43 @@
 html{
-    background-color:rgb(73, 73, 73);
     color: wheat;
 }
 header{
     padding: 1px 0px 1px 5%;
     background-color:#682919;
-    font: bold 25px sans-serif;
+    font: bold 1.75rem sans-serif;
 }
 body{
     margin: 0px;
 }
 main{
-    height: 850px;
+    height: 51rem;
     background-image:url(../images/background.png);
 }
 ul{
-    font: 20px;
-    line-height: 40px;
+    font: 1.25rem;
+    line-height: 2em;
 }
 .article{
-    padding: 10px 0px 30px 5%;
-    font: 20px sans-serif;
+    padding: 1em 0px 2em 5%;
+    font: 1.25rem sans-serif;
 }
 .info-section {
     display: flex;
     justify-content: space-around;
-    margin: 40px 20px;;
+    margin: 3em 1em;;
 }
 .info-block {
     background-color:rgb(57, 151, 48);
-    padding: 10px 20px 20px 20px;
-    border-radius: 8px;
+    padding: 1% 1% 1% 1%;
+    border-radius: 1em;
     width: 30%;
+    line-height: 1em;
 }
 footer {
-    padding-left: 1600px;
+    padding: 1px 0px 1px 0px;
+    text-align: center;
     color: #ffffff;
-    font-size: 10px;
+    background-color:rgb(73, 73, 73);
+    font-size: 1rem;
     
 }
