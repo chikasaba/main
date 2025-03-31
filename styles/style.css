@@ -9,6 +9,7 @@ header {
     font-size:1rem
 }
 
+
 body {
     margin: 0;
 }
@@ -36,13 +37,21 @@ h3 {
 .info-section {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     margin: 3em 1em
+}
+
+a {
+    color: #c0f6fc;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #0000EE;
 }
 
 .info-block {
     background-color: #0a7c00;
-    padding: 0 1% 1% 1%;
+    padding: 0% 1% 1% 1%;
     border-radius: 1em;
     width: 30%;
     min-width: 250px;
@@ -57,4 +66,15 @@ footer {
 
 p {
     line-height: 1.25
+}
+@media (max-width: 900px) {
+    .info-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-block {
+        width: 80%;
+        margin-bottom: 1em;
+    }
 }
