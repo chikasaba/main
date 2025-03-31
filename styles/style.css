@@ -11,8 +11,9 @@ body{
     margin: 0px;
 }
 main{
+    background-color: rgb(51, 51, 51);
     padding: 0px 0px 1px 0px;
-    background-image:url(../images/background.png);
+    background-image:url(../images/background.webp);
     background-repeat: repeat-y;
 }
 ul{
@@ -23,6 +24,9 @@ ul{
     padding: 1em 0px 2em 5%;
     font: 1.25rem sans-serif;
 }
+h3{
+    font: bold 1.25rem sans-serif;
+}
 .info-section {
     display: flex;
     justify-content: space-around;
@@ -30,7 +34,7 @@ ul{
 }
 .info-block {
     background-color:rgb(57, 151, 48);
-    padding: 1% 1% 1% 1%;
+    padding: 0% 1% 1% 1%;
     border-radius: 1em;
     width: 30%;
     line-height: 1em;
@@ -42,4 +46,7 @@ footer {
     background-color:rgb(73, 73, 73);
     font-size: 1rem;
     
+}
+p{
+    line-height: 1.25em;
 }
