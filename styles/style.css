@@ -19,6 +19,7 @@ main {
     padding-bottom: 1px;
     background-image: url(../images/background.webp);
     background-size: cover;
+    background-position: center;
 
 }
 
@@ -71,6 +72,10 @@ p {
 @media (max-width: 950px) {
     html {
         font-size: 1.75vw;
+    }
+    main{
+        background-image: url(../images/background-axis.webp);
+        background-size: cover;
     }
     .info-section {
         flex-direction: column;
