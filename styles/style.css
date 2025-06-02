@@ -5,11 +5,18 @@ html {
     font-size: 1rem;
 }
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 1px 5% 1px;
     background-color: #682919;
     font-size:1rem
 }
 
+.full-version-link {
+    color: white;
+    font-weight: bold;
+}
 
 body {
     margin: 0;
