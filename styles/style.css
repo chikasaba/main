@@ -1,32 +1,34 @@
+/* 全体 */
 body,
 html {
     background-color: #494949;
     color: #faebd7;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
-    font-size: 1rem;
 }
+body {
+    margin: 0;
+}
+/* タイポグラフィ */
+h1 {
+    color: #ffb74d;
+    text-shadow: 0 0 8px rgba(255, 183, 77, 0.6);
+}
+ul {
+    line-height: 2;
+}
+a {
+    font-weight: 700;
+    text-decoration: none;
+}
+p {
+    line-height: 1.5;
+}
+/* レイアウト */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1px 5%;
     background-color: #161b22;
-    font-size: 1rem;
-}
-.article,
-h3 {
-    font-size: 1.25rem;
-}
-header h1 {
-    color: #ffb74d;
-    text-shadow: 0 0 8px rgba(255, 183, 77, 0.6);
-}
-.full-version-link {
-    color: #fff;
-    font-weight: 700;
-}
-body {
-    margin: 0;
 }
 main {
     padding-bottom: 1px;
@@ -34,41 +36,45 @@ main {
     background-size: cover;
     background-position: center;
 }
-ul {
-    line-height: 2;
+footer {
+    padding: 1px 0;
+    text-align: center;
+}
+/* コンポーネント */
+.features{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
 }
 .article {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+.article {
+    font-size: 1.25rem;
     padding: 1em 5%;
 }
 .info-section {
     display: flex;
-    justify-content: space-around;
-    margin: 1em;
+    justify-content: center;
+    margin: 1.5em;
+    gap: 20px;
 }
-a {
-    font-weight: 700;
-    text-decoration: none;
+.nav-link {
+    color: #fff;
 }
-a:hover {
-    color: #ffd180;
-    text-shadow: 0 0 5px #ffd54f;
+.info-block h3 {
+    font-size: 1.25rem;
 }
 .info-block {
     background-color: rgba(74, 35, 90, 0.8);
     border: 2px solid #af7ac5;
     box-shadow: 0 0 15px rgba(175, 122, 197, 0.3);
-    padding: 0 1% 1%;
+    padding: 0 2% 1%;
     border-radius: 1em;
-    width: 30%;
+    flex: 1 1 300px;
     min-width: 250px;
-}
-footer {
-    padding: 1px 0;
-    text-align: center;
-    font-size: 1rem;
-}
-p {
-    line-height: 1.25;
+    max-width: 450px;
 }
 .discord-btn {
     display: block;
@@ -83,14 +89,20 @@ p {
         transform 0.2s,
         background-color 0.2s;
 }
+/* ユーティリティ */
+a:hover {
+    color: #ffd180;
+    text-shadow: 0 0 5px #ffd54f;
+}
 .discord-btn:hover {
     background-color: #4752c4;
     transform: translateY(-2px);
     text-shadow: none;
 }
+/* メディアクエリ（タブレット・スマホ用） */
 @media (max-width: 950px) {
     html {
-        font-size: 10px;
+        font-size: 14px;
     }
     main {
         background-image: url(../images/background-axis.webp);
@@ -99,6 +111,7 @@ p {
     .info-section {
         flex-direction: column;
         align-items: center;
+        justify-content: start;
     }
     .info-block {
         width: 90%;
@@ -107,7 +120,25 @@ p {
         padding: 1px 4%;
         box-sizing: border-box;
     }
-    .container {
-        padding: 0 5%;
+}
+/* メディアクエリ（スマホ用） */
+@media (max-width: 600px) {
+    .nav-link,
+    .features,
+    .features-list {
+        display: none;
+    }
+}
+/* メディアクエリ（大型モニタ用） */
+@media (min-width: 1800px) {
+    .info-section {
+        justify-content: flex-start;
+        padding-left: 5%;
+        gap: 40px;
+    }
+    .info-block {
+        width: 450px;
+        max-width: 100%;
+        flex: none;
     }
 }
