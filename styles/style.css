@@ -4,13 +4,19 @@ html {
     color: #faebd7;
     font-size: 1rem;
 }
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1px 5% 1px;
-    background-color: #682919;
+    background-color: #161b22;
     font-size:1rem
+}
+
+header h1 {
+    color: #ffb74d; 
+    text-shadow: 0 0 8px rgba(255, 183, 77, 0.6);
 }
 
 .full-version-link {
@@ -35,7 +41,7 @@ ul {
 }
 
 .article {
-    padding: 1em 5% 2em 5%;
+    padding: 1em 5% 1em 5%;
     font-size: 1.25rem;
 }
 
@@ -46,25 +52,28 @@ h3 {
 .info-section {
     display: flex;
     justify-content: space-around;
-    margin: 3em 1em
+    margin: 1em 1em
 }
 
 a {
-    color: #c0f6fc;
+    color: #ffd54f;
     font-weight: bold;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #0000EE;
+    color: #ffd180;
+    text-shadow: 0 0 5px #ffd54f;
 }
 
 .info-block {
-    background-color: #0a7c00;
+    background-color: rgba(74, 35, 90, 0.8); 
+    border: 2px solid #af7ac5;
+    box-shadow: 0 0 15px rgba(175, 122, 197, 0.3);
     padding: 0% 1% 1% 1%;
     border-radius: 1em;
     width: 30%;
     min-width: 250px;
-    line-height: 1.25
 }
 
 footer {
@@ -76,9 +85,27 @@ footer {
 p {
     line-height: 1.25
 }
+
+.discord-btn {
+    display: block;
+    background-color: #5865F2;
+    color: white !important;
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.discord-btn:hover {
+    background-color: #4752C4;
+    transform: translateY(-2px);
+    text-shadow: none;
+}
 @media (max-width: 950px) {
     html {
-        font-size: 1.75vw;
+        font-size: 10px;
     }
     main{
         background-image: url(../images/background-axis.webp);
