@@ -10,7 +10,7 @@ body {
 /* タイポグラフィ */
 h1 {
     color: #ffb74d;
-    text-shadow: 0 0 8px rgba(255, 183, 77, 0.6);
+    text-shadow: 0 1px 3px rgba(0,0,0,0.4);
 }
 ul {
     line-height: 2;
