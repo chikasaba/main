@@ -29,7 +29,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1px 5%;
-    background-color: #23272b
+    background-color: #23272b;
 }
 main {
     padding-bottom: 1px;
@@ -42,16 +42,8 @@ footer {
     text-align: center;
 }
 /* コンポーネント */
-.features{
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-}
 .article {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
-}
-.article {
     font-size: 1.25rem;
     padding: 1em 5%;
 }
@@ -69,7 +61,7 @@ footer {
 }
 .info-block {
     background-color: #00502fe8;
-    padding: 0% 1% 1% 1%;;
+    padding: 0 1% 1% 1%;
     border-radius: 1em;
     flex: 1 1 300px;
     min-width: 250px;
